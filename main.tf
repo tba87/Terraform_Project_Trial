@@ -5,6 +5,12 @@ terraform {
       version = "6.0.0-beta3"
     }
   }
+
+  backend "s3" {
+    bucket = "my-bucket-test-bibek"
+    key = "terraform-state/terraform.tfstate"
+    region = "us-east-1"
+  }
 }
 
 provider "aws" {
