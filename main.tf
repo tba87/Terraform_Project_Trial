@@ -59,6 +59,17 @@ resource "aws_instance" "my_ec2_instance" {
         BAZ = "true"
       }
   }
+
+  provisioner "remote-exec" {
+    inline = [
+      "sudo apt update -y",
+      "sudo apt install apache2 -y",
+      "sudo cp index.html /var/www/html/index.html",
+      "sudo systemctl start apache2",
+      "sudo systemctl enable apache2"
+    ]
+  
+  }
   
   connection {
     type = "ssh"

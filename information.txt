@@ -11,3 +11,36 @@ Environment: $FOO $BAR $BAZ
 Private IP: 172.31.18.85 
 Public IP: 3.94.194.222 
 Environment: $FOO $BAR $BAZ 
+Private IP: 172.31.30.0 
+Public IP: 50.17.90.79 
+Environment: $FOO $BAR $BAZ 
+Private IP: 172.31.25.22 
+Public IP: 98.84.191.243 
+Environment: $FOO $BAR $BAZ 
+Private IP: 172.31.30.242 
+Public IP: 54.89.186.253 
+Environment: $FOO $BAR $BAZ 
+Private IP: 172.31.20.53 
+Public IP: 98.84.152.195 
+Environment: $FOO $BAR $BAZ 
+Private IP: 172.31.31.167 
+Public IP: 44.223.63.62 
+Environment: $FOO $BAR $BAZ 
+Private IP: 172.31.30.76 
+Public IP: 54.173.85.115 
+Environment: $FOO $BAR $BAZ 
+Private IP: 172.31.17.37 
+Public IP: 54.89.191.174 
+Environment: $FOO $BAR $BAZ 
+Private IP: 172.31.23.117 
+Public IP: 107.21.179.9 
+Environment: $FOO $BAR $BAZ 
+Private IP: 172.31.20.49 
+Public IP: 18.215.183.125 
+Environment: $FOO $BAR $BAZ 
+Private IP: 172.31.21.174 
+Public IP: 54.164.193.36 
+Environment: $FOO $BAR $BAZ 
+Private IP: 172.31.86.44 
+Public IP: 54.172.169.113 
+Environment: $FOO $BAR $BAZ 
