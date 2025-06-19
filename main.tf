@@ -14,6 +14,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "my_ec2_instance" {
+    count = var.ec2_instance_count
     ami = var.image_id
     instance_type = var.instance_type
     tags = {
