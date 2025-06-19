@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibek Tamrakar - DevOps Engineer Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', 'Helvetica Neue', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background: #f4f4f4;
+            font-size: 12px;
+        }
+        
+        .container {
+            max-width: 8.5in;
+            margin: 20px auto;
+            padding: 0.75in;
+            background: white;
+            min-height: 11in;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #005a9c;
+            padding-bottom: 20px;
+        }
+        
+        .name {
+            font-size: 32px;
+            font-weight: 700;
+            color: #005a9c;
+            margin-bottom: 8px;
+        }
+        
+        .title {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+        
+        .contact-info {
+            font-size: 11px;
+            color: #444;
+            white-space: nowrap; /* Ensures the contact info stays on a single line */
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .contact-info a {
+            color: #005a9c;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #005a9c;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 12px;
+            padding-bottom: 4px;
+        }
+        
+        .summary {
+            text-align: justify;
+            font-size: 12px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .skill-category strong {
+            display: block;
+            color: #333;
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+        
+        .skill-list {
+            font-size: 11px;
+            color: #555;
+        }
+
+        .project {
+            margin-bottom: 15px;
+        }
+
+        .project-title {
+            font-weight: bold;
+            font-size: 13px;
+            color: #333;
+        }
+
+        .project-tech {
+            font-style: italic;
+            font-size: 11px;
+            color: #005a9c;
+            margin-bottom: 5px;
+        }
+
+        .project-description ul {
+            list-style-position: inside;
+            padding-left: 5px;
+        }
+
+        .project-description li {
+            font-size: 11px;
+            margin-bottom: 4px;
+        }
+        
+        .job {
+            margin-bottom: 18px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 5px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            font-size: 13px;
+            color: #333;
+        }
+        
+        .company {
+            font-size: 12px;
+            color: #005a9c;
+            font-weight: 500;
+        }
+        
+        .date {
+            font-size: 11px;
+            color: #666;
+            font-weight: normal;
+            white-space: nowrap;
+            padding-left: 15px;
+        }
+        
+        .job-description ul {
+            margin-left: 18px;
+        }
+        
+        .job-description li {
+            font-size: 11px;
+            margin-bottom: 4px;
+            line-height: 1.4;
+        }
+        
+        .education-item, .cert-item {
+            margin-bottom: 10px;
+        }
+        
+        .degree {
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .school {
+            font-size: 11px;
+            color: #666;
+        }
+        
+        .year {
+            font-size: 11px;
+            color: #666;
+            float: right;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .languages {
+            font-size: 11px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="name">BIBEK TAMRAKAR</div>
+            <div class="title">DevOps Engineer | Cloud & Automation Specialist</div>
+            <div class="contact-info">
+                Phone: +977-9841274016 | Email: <a href="mailto:emailtobibek@hotmail.com">emailtobibek@hotmail.com</a> | Location: Lalitpur, Nepal | LinkedIn: <a href="https://www.linkedin.com/in/bibek-tamrakar977" target="_blank">linkedin.com/in/bibek-tamrakar977</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Professional Summary</div>
+            <p class="summary">
+                Proactive IT professional with a solid 8-year foundation in system administration, technical support, and process automation. Currently specializing in DevOps through intensive, project-based training in modern technologies including Terraform, Docker, Kubernetes, Jenkins, and AWS. Eager to apply newly developed skills in Infrastructure as Code (IaC), CI/CD, and cloud infrastructure to build and maintain scalable, reliable systems.
+            </p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">DevOps Projects</div>
+            <div class="project">
+                <div class="project-title">Automated EC2 & Apache Deployment with Terraform</div>
+                <div class="project-tech">Technologies: Terraform, AWS (EC2), Apache, Bash</div>
+                <div class="project-description">
+                    <ul>
+                        <li>Developed a comprehensive Terraform script to fully automate AWS EC2 instance provisioning.</li>
+                        <li>Utilized EC2 user data to script the installation and configuration of an Apache web server on instance launch, hosting a static webpage.</li>
+                        <li>Applied Infrastructure as Code (IaC) principles to create a scalable, version-controlled, and repeatable deployment process.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+            <div class="skills-grid">
+                <div>
+                    <div class="skill-category">
+                        <strong>Cloud & DevOps:</strong>
+                        <div class="skill-list">AWS (EC2), Terraform, Docker, Kubernetes, Jenkins, Git, CI/CD, Infrastructure as Code (IaC)</div>
+                    </div>
+                    <div class="skill-category">
+                        <strong>Automation & Tools:</strong>
+                        <div class="skill-list">Bash Scripting, RPA (Robotic Process Automation)</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill-category">
+                        <strong>Technical Support & Ops:</strong>
+                        <div class="skill-list">ServiceNow, SuccessFactors, Incident Management, Root Cause Analysis</div>
+                    </div>
+                    <div class="skill-category">
+                        <strong>Systems & Networking:</strong>
+                        <div class="skill-list">Linux, Windows Server, Network Troubleshooting (CCNA Concepts)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Professional Experience</div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Report Analyst</div>
+                        <div class="company">Convergys India Services Private Limited, Bangalore</div>
+                    </div>
+                    <div class="date">April 2014 - January 2018</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Performed root cause analysis for critical system issues, implementing permanent solutions to reduce recurring incidents.</li>
+                        <li>Managed incident lifecycle and client requests using ServiceNow and SuccessFactors, ensuring 100% compliance with SLA requirements.</li>
+                        <li>Streamlined incident escalation procedures with rigorous documentation, improving team response efficiency and cross-team collaboration.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Customer Support Officer</div>
+                        <div class="company">Websurfer Nepal Communications System Pvt. Ltd., Kathmandu</div>
+                    </div>
+                    <div class="date">July 2010 - February 2013</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Provided Tier 2 technical support for server, network, and peripheral equipment issues for enterprise clients.</li>
+                        <li>Delivered expert internet and intranet technical support, consistently maintaining a 95% customer satisfaction score.</li>
+                        <li>Troubleshot and resolved server and network device issues, minimizing downtime for critical business operations.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Senior Technician (Hardware & Network)</div>
+                        <div class="company">Beltron Trading Pvt. Ltd., Kathmandu</div>
+                    </div>
+                    <div class="date">November 2008 - July 2010</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Provided on-site and remote technical support for computer hardware and network infrastructure at multiple client locations.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="two-column">
+            <div class="section">
+                <div class="section-title">Education</div>
+                <div class="education-item">
+                    <div class="degree">Bachelor of Science in Information Technology</div>
+                    <div class="school">Sikkim Manipal University</div>
+                    <span class="year">2016</span>
+                </div>
+                <div class="education-item">
+                    <div class="degree">General Educational Development (GED)</div>
+                    <div class="school">American Council on Education</div>
+                    <span class="year">2012</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Training & Certifications</div>
+                <div class="cert-item">
+                    <div class="degree">DevOps Engineering Certification (In Progress)</div>
+                    <div class="school">Tech Axis, Pulchowk, Lalitpur</div>
+                </div>
+                <div class="cert-item">
+                    <div class="degree">RPA (Robotic Process Automation)</div>
+                    <div class="school">Tecmax, Bangalore</div>
+                    <span class="year">2017</span>
+                </div>
+                <div class="cert-item">
+                    <div class="degree">CCNA Certification Training</div>
+                    <div class="school">Websurfer Nepal</div>
+                    <span class="year">2011</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Languages</div>
+            <div class="languages">
+                <strong>Fluent:</strong> English, Nepali, Hindi, Newari
+            </div>
+        </div>
+    </div>
+</body>
+</html>

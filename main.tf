@@ -38,6 +38,28 @@ resource "aws_instance" "my_ec2_instance" {
     destination = "/home/ubuntu/myapache.sh"
   }
 
+  provisioner "file" {
+    source = "conf/index.html"
+    destination = "/home/ubuntu/index.html"
+  }
+
+  provisioner "local-exec" {
+    command = "echo Private IP: ${self.private_ip} >> information.txt"
+  }
+
+  provisioner "local-exec" {
+    command = "echo Public IP: ${self.public_ip} >> information.txt" 
+  }
+
+  provisioner "local-exec" {
+    command = "echo Environment: $FOO $BAR $BAZ >> information.txt"
+    environment = {
+        FOO = "bar"
+        BAR = 1
+        BAZ = "true"
+      }
+  }
+  
   connection {
     type = "ssh"
     user = "ubuntu"

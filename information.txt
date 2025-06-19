@@ -1,0 +1,13 @@
+\"Instance 1 of 1:\" 
+Private IP: 172.31.16.227 
+Public IP: 18.208.251.189 
+Environment: $FOO $BAR $BAZ 
+Private IP: 172.31.27.247 
+Public IP: 54.91.60.168 
+Environment: $FOO $BAR $BAZ 
+Private IP: 172.31.16.133 
+Public IP: 3.94.167.222 
+Environment: $FOO $BAR $BAZ 
+Private IP: 172.31.18.85 
+Public IP: 3.94.194.222 
+Environment: $FOO $BAR $BAZ 
