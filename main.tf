@@ -22,9 +22,28 @@ provider "aws" {
 resource "aws_instance" "my_ec2_instance" {
     count = var.ec2_instance_count
     ami = var.image_id
+    key_name = "bib-key-june"
     instance_type = var.instance_type
     tags = {
         Name = "Webservices"
     }
+
+  provisioner "file" {
+    source = "conf/myapp.config"
+    destination = "/home/ubuntu/myapp.config"
+  }
+
+  provisioner "file" {
+    source = "conf/myapache.sh"
+    destination = "/home/ubuntu/myapache.sh"
+  }
+
+  connection {
+    type = "ssh"
+    user = "ubuntu"
+    private_key = file("~/.ssh/bib-key-june.pem")
+    host = self.public_ip
+  }
+
 }
 
