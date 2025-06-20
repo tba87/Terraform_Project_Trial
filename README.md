@@ -33,6 +33,6 @@ This Terraform project automates the deployment of EC2 instances on AWS with Apa
 
 ## Outputs
 
-Public IP addresses
-Private DNS names
-Instance types
+| 'Public IP addresses' |
+| 'Private DNS names'   |
+| 'Instance types'      |
