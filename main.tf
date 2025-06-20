@@ -34,8 +34,8 @@ resource "aws_instance" "my_ec2_instance" {
   }
 
   provisioner "file" {
-    source = "conf/myapache.sh"
-    destination = "/home/ubuntu/myapache.sh"
+    source = "conf/mynginx.sh"
+    destination = "/home/ubuntu/mynginx.sh"
   }
 
   provisioner "file" {
@@ -68,15 +68,19 @@ resource "aws_instance" "my_ec2_instance" {
       "sudo systemctl start apache2",
       "sudo systemctl enable apache2"
     ]
-  
   }
-  
+  provisioner "remote-exec" {
+    inline = [ 
+      "chmod +x /home/ubuntu/mynginx.sh",
+      "/home/ubuntu/mynginx.sh"
+    ]
+  }
+
   connection {
     type = "ssh"
     user = "ubuntu"
     private_key = file("~/.ssh/bib-key-june.pem")
     host = self.public_ip
   }
-
 }
 
