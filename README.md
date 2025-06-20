@@ -22,15 +22,16 @@ This Terraform project automates the deployment of EC2 instances on AWS with Apa
    git clone https://github.com/tba87/Terraform_Project_Trial.git
    cd Terraform_Project_Trial
 
-Variables
+## Variables
 
-Variable                Description	                Default
-aws_region              AWS region	                us-east-1
-image_id                AMI ID	                    ami-020cba7c55df1f615
-ec2_instance_count	    Number of EC2 instances	    2
-instance_type	        EC2 instance type	        t2.micro
+| Variable             | Description                              | Default                     |
+|----------------------|------------------------------------------|-----------------------------|
+| `aws_region`         | AWS region where resources will be created | `us-east-1`                |
+| `image_id`           | AMI ID for the EC2 instance              | `ami-020cba7c55df1f615`    |
+| `ec2_instance_count` | Number of EC2 instances to deploy        | `2`                        |
+| `instance_type`      | Type of EC2 instance                     | `t2.micro`                 |
 
-Outputs
+## Outputs
 
 Public IP addresses
 Private DNS names
